@@ -35,7 +35,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               <div className="flex flex-1 items-center justify-between group-data-[collapsible=icon]:hidden">
                 <div className="flex flex-col text-sm">
                   <span className="font-semibold text-sidebar-foreground">Admin User</span>
-                  <span className="text-xs text-muted-foreground">admin@clinicrx.com</span>
+                  <span className="text-xs text-muted-foreground">admin@orbeclinicrx.com</span>
                 </div>
                 <Button variant="ghost" size="icon" className="h-8 w-8">
                   <LogOut className="h-4 w-4" />

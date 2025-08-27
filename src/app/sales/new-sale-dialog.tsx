@@ -60,7 +60,7 @@ export function NewSaleDialog() {
             <Label htmlFor="payment-ref" className="text-right">
               Payment Ref.
             </Label>
-            <Input id="payment-ref" placeholder="e.g., MPESA-XYZ123" className="col-span-3" />
+            <Input id="payment-ref" placeholder="e.g., Telebirr-XYZ123" className="col-span-3" />
           </div>
         </div>
         <DialogFooter>

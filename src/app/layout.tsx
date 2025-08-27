@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { useToast } from '@/hooks/use-toast';
 
 export const metadata: Metadata = {
-  title: 'ClinicRx',
+  title: 'Orbe ClinicRx',
   description: 'A modern inventory and sales management app for clinics.',
 };
 

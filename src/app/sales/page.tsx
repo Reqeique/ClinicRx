@@ -38,7 +38,7 @@ export default function SalesPage() {
                   <TableCell>{format(new Date(sale.date), 'MMM dd, yyyy')}</TableCell>
                   <TableCell>{sale.items.reduce((acc, item) => acc + item.quantity, 0)}</TableCell>
                   <TableCell>{sale.paymentRef}</TableCell>
-                  <TableCell className="text-right">${sale.totalAmount.toFixed(2)}</TableCell>
+                  <TableCell className="text-right">ETB {sale.totalAmount.toFixed(2)}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

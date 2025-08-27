@@ -11,9 +11,9 @@ export const inventoryData: InventoryItem[] = [
 ];
 
 export const salesData: Sale[] = [
-  { id: 'S001', date: '2024-05-20', items: [{ itemId: '1', name: 'Paracetamol 500mg', quantity: 2 }], totalAmount: 5.00, paymentRef: 'MPESA-XYZ123' },
-  { id: 'S002', date: '2024-05-19', items: [{ itemId: '3', name: 'Ibuprofen 200mg', quantity: 1 }, { itemId: '2', name: 'Amoxicillin 250mg', quantity: 1 }], totalAmount: 12.50, paymentRef: 'MPESA-ABC456' },
-  { id: 'S003', date: '2024-05-18', items: [{ itemId: '5', name: 'Vitamin C 1000mg', quantity: 3 }], totalAmount: 15.00, paymentRef: 'MPESA-DEF789' },
+  { id: 'S001', date: '2024-05-20', items: [{ itemId: '1', name: 'Paracetamol 500mg', quantity: 2 }], totalAmount: 150.00, paymentRef: 'Telebirr-XYZ123' },
+  { id: 'S002', date: '2024-05-19', items: [{ itemId: '3', name: 'Ibuprofen 200mg', quantity: 1 }, { itemId: '2', name: 'Amoxicillin 250mg', quantity: 1 }], totalAmount: 350.50, paymentRef: 'Telebirr-ABC456' },
+  { id: 'S003', date: '2024-05-18', items: [{ itemId: '5', name: 'Vitamin C 1000mg', quantity: 3 }], totalAmount: 450.00, paymentRef: 'Telebirr-DEF789' },
 ];
 
 export const alertsData: Alert[] = [
