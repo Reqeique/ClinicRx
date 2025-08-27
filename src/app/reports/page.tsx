@@ -61,16 +61,3 @@ export default function ReportsPage() {
     </div>
   );
 }
-// NOTE: DatePickerWithRange component needs to be created.
-// For now, this is a placeholder to show the UI structure.
-// Creating a new file for a date picker is out of scope. Let's create a placeholder here.
-
-function DatePickerWithRange({ className }: { className?: string }) {
-  return (
-    <div className={className}>
-      <Button variant="outline" className="w-full justify-start text-left font-normal">
-        Pick a date range
-      </Button>
-    </div>
-  );
-}
