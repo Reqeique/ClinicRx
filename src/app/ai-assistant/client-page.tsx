@@ -18,7 +18,12 @@ const formSchema = z.object({
   stockReport: z.string().min(10, 'Stock report data is required.'),
 });
 
-export function AIClientPage() {
+type AIClientPageProps = {
+  salesReportData: string;
+  stockReportData: string;
+};
+
+export function AIClientPage({ salesReportData, stockReportData }: AIClientPageProps) {
   const [suggestion, setSuggestion] = useState<ReorderSuggestionOutput | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -26,8 +31,8 @@ export function AIClientPage() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      salesReport: '',
-      stockReport: '',
+      salesReport: salesReportData || '',
+      stockReport: stockReportData || '',
     },
   });
 
@@ -53,7 +58,9 @@ export function AIClientPage() {
           <form onSubmit={form.handleSubmit(onSubmit)}>
             <CardHeader>
               <CardTitle>Provide Data</CardTitle>
-              <CardDescription>Paste your sales and stock report data below.</CardDescription>
+              <CardDescription>
+                Your current sales and stock reports are pre-filled below. Click generate to get a suggestion.
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <FormField
